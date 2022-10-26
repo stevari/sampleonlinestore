@@ -11,7 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -39,7 +40,8 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          
+          <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex"},mr:1}}/>
           <Typography
             variant="h6"
             noWrap
@@ -55,7 +57,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            SHOP
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,7 +96,7 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/*<LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex"},mr:1}}/>*/}
           <Typography
             variant="h5"
             noWrap
@@ -128,7 +130,9 @@ function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar>
+                  <SettingsIcon/>
+                </Avatar>
               </IconButton>
             </Tooltip>
             <Menu

@@ -5,7 +5,7 @@ export default function Card(props) {
     <div className={props.className}>
         <div className="small-div">
             <i className={props.className}></i>
-            <StoreIcon/> 
+            <StoreIcon sx={{ fontSize: 40 }}/>
         </div>
         
 
