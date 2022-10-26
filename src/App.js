@@ -1,6 +1,6 @@
 
 import './App.css';
-import CustomButton from './components/CustomBtn';
+//import CustomButton from './components/CustomBtn';
 import Navbar from './components/NavBar';
 import Card from './components/Card';
 
