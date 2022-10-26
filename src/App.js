@@ -9,9 +9,8 @@ function App() {
     
     <div className="App">
       <Navbar/>
-      <h1>Sample Online Store.</h1>
+      <h1>Sample Online Store</h1>
       <h3>made by Ville Vartia</h3>
-      {/*<CustomButton txt = "proceed"/>*/}
       <div>
         <br/>
       <Card 
