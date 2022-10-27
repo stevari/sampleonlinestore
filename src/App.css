@@ -4,11 +4,18 @@
   font-family: "Roboto Flex","sans-serif";
   
 }
-.Card {
+.CustomCard {
   text-align: center;
   color: #ffffff;
   font-family: "Roboto Flex","sans-serif";
+  font-size: x-large;
+  width: 24rem;
+ 
 
+  
+}
+.parent {
+  display: flex;
   
 }
 .font-link{
@@ -27,7 +34,7 @@
 }
 
 .App-header {
-  background-color: #002E62;
+  background-color: #0c0d0d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
