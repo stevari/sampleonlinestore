@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Products', 'Cart', 'Info'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
@@ -37,7 +37,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{ background: '#201e1e' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           
