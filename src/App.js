@@ -5,19 +5,21 @@ import Navbar from './components/NavBar';
 //import Card from './components/Card';
 import background from "./img/background.jpg";
 import CustomCard from './components/CustomCard';
+//import Header from './components/Header';
 
 function App() {
   return (
     
     <div className="App" style={{ backgroundImage: `url(${background})`,backgroundPosition: 'center',backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      
       <Navbar/>
-      <h1>Sample Online Store</h1>
-      <h3>made by Ville Vartia</h3>
+      
       <br/>
       <div className='parent'>
-        <CustomCard/>
-        <CustomCard/>
-        <CustomCard/>
+        <CustomCard title="card #1"/>
+        <CustomCard title="card #2"/>
+        <CustomCard title="card #3"/>
+        
       </div>
      
     </div>

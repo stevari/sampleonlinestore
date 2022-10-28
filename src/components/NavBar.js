@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import SettingsIcon from '@mui/icons-material/Settings';
-
+import Header from './Header';
 const pages = ['Products', 'Cart', 'Info'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -37,11 +37,13 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" style={{ background: '#201e1e' }}>
+    
+    <AppBar position="static" style={{ background: '#201e1e',marginTop:-10,marginBottom:0 }}>
+      <Header/>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           
-          <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex"},mr:1}}/>
+          <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex"},mr:1,color:"#D1A55C"}}/>
           <Typography
             variant="h6"
             noWrap
@@ -57,7 +59,10 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            SHOP
+            <div style={{color:"#D1A55C"}}>
+                SHOP
+              </div>
+            
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -120,7 +125,7 @@ function NavBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#D1A55C', display: 'block' }}
               >
                 {page}
               </Button>
@@ -131,7 +136,7 @@ function NavBar() {
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar>
-                  <SettingsIcon/>
+                  <SettingsIcon />
                 </Avatar>
               </IconButton>
             </Tooltip>
