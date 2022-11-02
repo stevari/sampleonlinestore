@@ -13,9 +13,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import SettingsIcon from '@mui/icons-material/Settings';
-import Header from './Header';
+//import Header from './Header';
 const pages = ['Products', 'Cart', 'Info'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['My Cart', 'Account',  'Help'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,12 +38,10 @@ function NavBar() {
 
   return (
     
-    <AppBar position="static" style={{ background: '#201e1e',marginTop:-10,marginBottom:0 }}>
-      <Header/>
+    <AppBar position="static" style={{ background: '#201e1e',marginBottom:0 }}>
+      
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          
-          <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex"},mr:1,color:"#D1A55C"}}/>
           <Typography
             variant="h6"
             noWrap
@@ -59,9 +57,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            <div style={{color:"#D1A55C"}}>
-                SHOP
-              </div>
+          
             
           </Typography>
 
@@ -118,7 +114,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -132,11 +128,16 @@ function NavBar() {
             ))}
           </Box>
 
+          
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar>
-                  <SettingsIcon />
+              <div style={{color:"#ffffff",margin:"5px"}}>
+                  Cart 
+                </div>
+                
+                <Avatar sx={{backgroundColor:"#2e2929"}}>
+                <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex",color:"#D1A55C"}}}/>
                 </Avatar>
               </IconButton>
             </Tooltip>

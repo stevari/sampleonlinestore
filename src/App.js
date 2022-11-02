@@ -1,26 +1,19 @@
 
 import './App.css';
-//import CustomButton from './components/CustomBtn';
-import Navbar from './components/NavBar';
-//import Card from './components/Card';
 import background from "./img/background.jpg";
-import CustomCard from './components/CustomCard';
-//import Header from './components/Header';
+import Header from './components/Header';
+import Body from './components/Body';
+
 
 function App() {
   return (
     
-    <div className="App" style={{ backgroundImage: `url(${background})`,backgroundPosition: 'center',backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+    <div className="App" style={{ backgroundImage: `url(${background})`,backgroundPosition: 'center',backgroundSize: 'cover', backgroundRepeat: 'no-repeat',margin:-10 }}>
       
-      <Navbar/>
+      <Header/>
       
-      <br/>
-      <div className='parent'>
-        <CustomCard title="card #1"/>
-        <CustomCard title="card #2"/>
-        <CustomCard title="card #3"/>
-        
-      </div>
+      
+      <Body/>
      
     </div>
   );
