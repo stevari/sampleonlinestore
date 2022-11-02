@@ -9,10 +9,7 @@ function App() {
   return (
     
     <div className="App" style={{ backgroundImage: `url(${background})`,backgroundPosition: 'center',backgroundSize: 'cover', backgroundRepeat: 'no-repeat',margin:-10 }}>
-      
       <Header/>
-      
-      
       <Body/>
      
     </div>
