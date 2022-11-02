@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-import SettingsIcon from '@mui/icons-material/Settings';
+//import SettingsIcon from '@mui/icons-material/Settings';
 //import Header from './Header';
 const pages = ['Products', 'Cart', 'Info'];
 const settings = ['My Cart', 'Account',  'Help'];
