@@ -132,10 +132,11 @@ function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+              {/* 
               <div style={{color:"#ffffff",margin:"5px"}}>
                   Cart 
                 </div>
-                
+                */}
                 <Avatar sx={{backgroundColor:"#2e2929"}}>
                 <LocalGroceryStoreIcon sx={{display: { xs: "none", md: "flex",color:"#D1A55C"}}}/>
                 </Avatar>
