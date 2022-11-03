@@ -5,20 +5,34 @@
   
 }
 .h1{
-  color:"#D1A55C";
+  color:#D1A55C;
   font-family: "Roboto Flex","sans-serif";
 }
-.CustomCard {
+.CardText{
   text-align: center;
+  
   color: #ffffff;
   font-family: "Roboto Flex","sans-serif";
   font-size: x-large;
+  margin:10px;
   font-weight: 500;
+
+}
+.CardTitle{
+  text-align: center;
+  color:#D1A55C;
+  font-family: "Roboto Flex","sans-serif";
+  font-size: x-large;
+  margin: 10px;
+}
+.CustomCard {
+  
+  
   width: 24rem;
   background-color: #2e2929;
   margin-top: 2cm;
-  margin-right: 2cm;
-  margin-left: 2cm;
+  margin-right: 1cm;
+  margin-left: 1cm;
   margin-bottom: 5cm;
 
 
