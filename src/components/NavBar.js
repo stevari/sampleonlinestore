@@ -91,7 +91,7 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page}  onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -114,14 +114,14 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            
+            {/*NavBarButtons Cart, Info, Products */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#D1A55C', display: 'block' }}
+                sx={{ my: 2, color: '#D1A55C', display: 'block',fontSize:"large",backgroundColor:"#2e2929",margin:0.5 }}
               >
                 {page}
               </Button>
