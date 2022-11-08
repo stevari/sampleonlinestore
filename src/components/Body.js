@@ -1,11 +1,13 @@
 import React from 'react'
 import beltandweight from "../img/beltandweight.jpg";
 import dumbbellsmetal from "../img/dumbbellsmetalsmall.jpg";
+import background from "../img/background.jpg";
 import barbell from "../img/barbell.jpg";
 import CustomCard from './CustomCard';
+
 export default function Body() {
     return (
-        <div>
+        <div style={{ backgroundImage: `url(${background})`,backgroundPosition: 'center',backgroundSize: 'cover', backgroundRepeat: 'no-repeat',marginLeft:-8,marginRight:-7 }}>
             <div className='parent'>
                 {/*Row 1*/}
                 <CustomCard

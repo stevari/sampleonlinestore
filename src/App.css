@@ -2,9 +2,16 @@
   text-align: center;
   color: white;
   font-family: "Roboto Flex","sans-serif";
-  
+  background-color: #0a0909;
+  padding: 5;
+  margin: auto;
 }
+
 .h1{
+  color:#D1A55C;
+  font-family: "Roboto Flex","sans-serif";
+}
+.h2{
   color:#D1A55C;
   font-family: "Roboto Flex","sans-serif";
 }
@@ -36,8 +43,17 @@
   margin-left: 1cm;
   margin-bottom: 1cm;
 
-
+}
+.Footer{  
+  text-align: left;
+  background-color: #2e2929;
+  color: #ffffff;
+  font-family: "Roboto Flex","sans-serif";
   
+  padding: 0.5cm;
+  border: #ffffff;
+
+
 }
 .CardButton{
   margin-bottom: auto;
